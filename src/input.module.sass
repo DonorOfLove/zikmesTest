@@ -1,14 +1,16 @@
 *
   margin: 0
   padding: 0
+
 h1
   color: white
+
 body
   background-color: #282c34
-  padding-left: 20px
+  padding-left: 40px
+  padding-top: 20px
   background-image: url("./img/background.png")
   background-size: auto
-
 
 .search__input__wrap
   float: left
@@ -27,7 +29,6 @@ body
   border: 2px solid white
   background: rgba(209, 209, 209, 0.6)
 
-
 button
   background-color: red
   border: 2px solid white
@@ -40,20 +41,24 @@ input
   background: none
   z-index: 1
   outline: 0
+
 input::placeholder
   color: #ababab
+
 .btn
-  -ms-transform: skewX(20deg) /* IE 9 */
-  -webkit-transform: skewX(20deg) /* Safari */
+  -ms-transform: skewX(20deg)
+  -webkit-transform: skewX(20deg)
   transform: skewX(-45deg)
 
 .btn_text
-  -ms-transform: skewX(-20deg) /* IE 9 */
-  -webkit-transform: skewX(-45deg) /* Safari */
+  -ms-transform: skewX(-20deg)
+  -webkit-transform: skewX(-45deg)
   transform: skewX(45deg)
   padding: 20px
 
 @media (max-width: 427px)
+  body
+    padding-left: 0
   .btn
     transform: skewX(0)
   .btn_text
