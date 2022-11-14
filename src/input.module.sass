@@ -1,0 +1,63 @@
+*
+  margin: 0
+  padding: 0
+h1
+  color: white
+body
+  background-color: #282c34
+  padding-left: 20px
+  background-image: url("./img/background.png")
+  background-size: auto
+
+
+.search__input__wrap
+  float: left
+  position: relative
+  padding: 4px 24px
+
+.search__input__wrap:after
+  display: block
+  position: absolute
+  content: " "
+  z-index: 0
+  left: 10px; top: 0px; right: 8px; bottom: -1px
+  pointer-events: none
+  transform: skew(-45deg)
+  margin-right: -30px
+  border: 2px solid white
+  background: rgba(209, 209, 209, 0.6)
+
+
+button
+  background-color: red
+  border: 2px solid white
+  color: white
+
+input
+  height: 50px
+  position: relative
+  border: none
+  background: none
+  z-index: 1
+  outline: 0
+input::placeholder
+  color: #ababab
+.btn
+  -ms-transform: skewX(20deg) /* IE 9 */
+  -webkit-transform: skewX(20deg) /* Safari */
+  transform: skewX(-45deg)
+
+.btn_text
+  -ms-transform: skewX(-20deg) /* IE 9 */
+  -webkit-transform: skewX(-45deg) /* Safari */
+  transform: skewX(45deg)
+  padding: 20px
+
+@media (max-width: 427px)
+  .btn
+    transform: skewX(0)
+  .btn_text
+    transform: skewX(0)
+  .search__input__wrap:after
+    transform: skewX(0)
+
